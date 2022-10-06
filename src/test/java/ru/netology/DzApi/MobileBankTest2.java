@@ -21,7 +21,7 @@ class MobileBankTest2 {
                   .then()
                   .statusCode(200)
                   .contentType(ContentType.JSON)
-                  .body("[0].currency", equalTo("RUb"));
+                  .body("[0].currency", equalTo("RUB"));
 
 
      }
