@@ -13,16 +13,16 @@ class MobileBankTest {
     void shouldReturnDemoAccounts() {
 
 
-            given()
-                    .baseUri("http://localhost:9999/api/v1")
-                    // Выполняемые действия
-                    .when()
-                    .get("/demo/accounts")
-                    // Проверки
-                    .then()
-                    .statusCode(200)
-                    .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
-            ;
-        }
+        given()
+                .baseUri("http://localhost:9999/api/v1")
+                // Выполняемые действия
+                .when()
+                .get("/demo/accounts")
+                // Проверки
+                .then()
+                .statusCode(200)
+                .body(matchesJsonSchemaInClasspath("accounts.schema.json"))
+        ;
+    }
 
-        }
+}
